@@ -141,7 +141,9 @@ class Shortcode {
 						'orderby' 			=> $atts['orderby'],
 					)
 				);
+
 			}
+
 			if ( empty( $attachments ) ) {
 				return '';
 			}
@@ -156,7 +158,7 @@ class Shortcode {
 
 			$data_flickity = wp_json_encode( $data_flickity );
 
-			$output[] = '<div class="carousel align-left" data-flickity=' . $data_flickity . '>';
+			$output[] = '<div class="carousel align-left carousel-size-' . $atts['size'] . '" data-flickity=' . $data_flickity . '>';
 
 			foreach ( $attachments as $id => $attachment ) {
 
@@ -171,7 +173,9 @@ class Shortcode {
 			$output[] = '</div>';
 
 			$output = implode( "\n", $output );
+
 		}
+
 		return $output;
 
 	}
