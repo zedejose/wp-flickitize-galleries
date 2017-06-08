@@ -1,0 +1,17 @@
+{
+  "name": "wp-flickitize-galleries",
+  "version": "0.1.0",
+  "description": "Packages for the WP Flickitize Galleries plugin",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zedejose/wp-flickitize-galleries.git"
+  },
+  "author": "Ze Fontainhas",
+  "license": "GPL-2.0+",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-wp-i18n": "^1.0.0"
+  }
+}
