@@ -142,7 +142,6 @@ class Shortcode {
 					)
 				);
 			}
-
 			if ( empty( $attachments ) ) {
 				return '';
 			}
@@ -161,7 +160,7 @@ class Shortcode {
 
 			foreach ( $attachments as $id => $attachment ) {
 
-				$image_tag 	= wp_get_attachment_image( $id, $atts['size'] );
+				$image_tag 	= wp_get_attachment_image( $id, $atts['size'], false, array( 'style' => 'max-width:none;' ) );
 
 				$output[] 	= '<div class="carousel-cell">';
 				$output[] 	= $image_tag;
@@ -173,9 +172,7 @@ class Shortcode {
 
 			$output = implode( "\n", $output );
 		}
-
 		return $output;
-
 
 	}
 
