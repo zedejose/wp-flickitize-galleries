@@ -30,10 +30,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/* Define constants */
 define( 'WP_FLICKITIZE_DIR', dirname( __FILE__ ) );
 define( 'WP_FLICKITIZE_FILE', __FILE__ );
 define( 'WP_FLICKITIZE_BASE', plugin_basename( __FILE__ ) );
 define( 'WP_FLICKITIZE_MIN_WP', 4.6 );
 define( 'WP_FLICKITIZE_MIN_PHP', 5.6 );
 
+/* Inlcude plugin classes */
+require_once 'inc/class-admin.php';
+require_once 'inc/class-shortcode.php';
 

@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: WP Flickitize Galleries 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-flickitize-"
 "galleries\n"
-"POT-Creation-Date: 2017-06-08 10:56:28+00:00\n"
-"PO-Revision-Date: 2017-06-08 11:57+0100\n"
+"POT-Creation-Date: 2017-06-08 11:33:58+00:00\n"
+"PO-Revision-Date: 2017-06-08 12:34+0100\n"
 "Last-Translator: WordPress Portugal <http;//wp-portugal.com>\n"
 "Language-Team: \n"
 "Language: pt_PT\n"
@@ -22,6 +22,10 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Generator: Poedit 2.0\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: inc/class-admin.php:39
+msgid "Use Flickity"
+msgstr "Usar Flickity"
 
 #. Plugin Name of the plugin/theme
 msgid "WP Flickitize Galleries"
