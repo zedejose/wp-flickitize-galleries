@@ -5,6 +5,16 @@ module.exports = function( grunt ) {
 
         pkg: grunt.file.readJSON('package.json'),
 
+        /**
+         * Make readme.txt a markdown file
+         */
+        wp_readme_to_markdown: {
+            flickitize: {
+                files: {
+                  'readme.MD': 'readme.txt'
+                },
+            },
+        },
 
         /**
          * Populate .POT file and merge .PO files
@@ -39,7 +49,8 @@ module.exports = function( grunt ) {
 
 
     grunt.loadNpmTasks('grunt-wp-i18n');
+    grunt.loadNpmTasks('grunt-wp-readme-to-markdown');
 
-    grunt.registerTask('default', ['makepot','watch']);
+    grunt.registerTask('default', ['makepot','wp_readme_to_markdown']);
 
 };
